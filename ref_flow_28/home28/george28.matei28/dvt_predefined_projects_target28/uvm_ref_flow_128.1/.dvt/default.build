@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib28/sv_cb_ex_lib28/interface_uvc_lib28/ahb28/sv
++incdir+soc_verification_lib28/sv_cb_ex_lib28/interface_uvc_lib28/apb28/sv
++incdir+soc_verification_lib28/sv_cb_ex_lib28/interface_uvc_lib28/uart28/sv
++incdir+soc_verification_lib28/sv_cb_ex_lib28/interface_uvc_lib28/spi28/sv
++incdir+soc_verification_lib28/sv_cb_ex_lib28/interface_uvc_lib28/gpio28/sv
++incdir+soc_verification_lib28/sv_cb_ex_lib28/uart_ctrl28/sv
++incdir+soc_verification_lib28/sv_cb_ex_lib28/uart_ctrl28/sv/sequence_lib28
++incdir+soc_verification_lib28/sv_cb_ex_lib28/apb_subsystem28/sv
++incdir+soc_verification_lib28/sv_cb_ex_lib28/apb_subsystem28/sv/sequence_lib28
++incdir+soc_verification_lib28/sv_cb_ex_lib28/apb_subsystem28/tb/sv
++incdir+soc_verification_lib28/sv_cb_ex_lib28/apb_subsystem28/tb/tests
++incdir+designs28/socv28/rtl28/rtl_lpw28/smc28/rtl28
+
+designs28/socv28/rtl28/rtl_lpw28/opencores28/uart1655028/rtl28/uart_defines28.v
+designs28/socv28/rtl28/rtl_lpw28/opencores28/spi28/rtl28/spi_defines28.v
+soc_verification_lib28/sv_cb_ex_lib28/apb_subsystem28/sv/gpio_defines28.svh
+soc_verification_lib28/sv_cb_ex_lib28/apb_subsystem28/sv/spi_defines28.svh
+soc_verification_lib28/sv_cb_ex_lib28/uart_ctrl28/sv/uart_ctrl_defines28.svh
+soc_verification_lib28/sv_cb_ex_lib28/apb_subsystem28/sv/apb_subsystem_defines28.svh
+soc_verification_lib28/sv_cb_ex_lib28/interface_uvc_lib28/ahb28/sv/ahb_pkg28.sv
+soc_verification_lib28/sv_cb_ex_lib28/interface_uvc_lib28/apb28/sv/apb_pkg28.sv
+soc_verification_lib28/sv_cb_ex_lib28/interface_uvc_lib28/uart28/sv/uart_pkg28.sv
+soc_verification_lib28/sv_cb_ex_lib28/interface_uvc_lib28/gpio28/sv/gpio_pkg28.sv
+soc_verification_lib28/sv_cb_ex_lib28/interface_uvc_lib28/spi28/sv/spi_pkg28.sv
+soc_verification_lib28/sv_cb_ex_lib28/uart_ctrl28/sv/uart_ctrl_pkg28.sv
+soc_verification_lib28/sv_cb_ex_lib28/apb_subsystem28/sv/apb_subsystem_pkg28.sv
+
+soc_verification_lib28/sv_cb_ex_lib28/apb_subsystem28/tb/sv/apb_subsystem_top28.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

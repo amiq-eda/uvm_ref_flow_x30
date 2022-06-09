@@ -1,0 +1,47 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib30/sv_cb_ex_lib30/interface_uvc_lib30/ahb30/sv
++incdir+soc_verification_lib30/sv_cb_ex_lib30/interface_uvc_lib30/apb30/sv
++incdir+soc_verification_lib30/sv_cb_ex_lib30/interface_uvc_lib30/uart30/sv
++incdir+soc_verification_lib30/sv_cb_ex_lib30/interface_uvc_lib30/spi30/sv
++incdir+soc_verification_lib30/sv_cb_ex_lib30/interface_uvc_lib30/gpio30/sv
++incdir+soc_verification_lib30/sv_cb_ex_lib30/uart_ctrl30/sv
++incdir+soc_verification_lib30/sv_cb_ex_lib30/uart_ctrl30/sv/sequence_lib30
++incdir+soc_verification_lib30/sv_cb_ex_lib30/apb_subsystem30/sv
++incdir+soc_verification_lib30/sv_cb_ex_lib30/apb_subsystem30/sv/sequence_lib30
++incdir+soc_verification_lib30/sv_cb_ex_lib30/apb_subsystem30/tb/sv
++incdir+soc_verification_lib30/sv_cb_ex_lib30/apb_subsystem30/tb/tests
++incdir+designs30/socv30/rtl30/rtl_lpw30/smc30/rtl30
+
+designs30/socv30/rtl30/rtl_lpw30/opencores30/uart1655030/rtl30/uart_defines30.v
+designs30/socv30/rtl30/rtl_lpw30/opencores30/spi30/rtl30/spi_defines30.v
+soc_verification_lib30/sv_cb_ex_lib30/apb_subsystem30/sv/gpio_defines30.svh
+soc_verification_lib30/sv_cb_ex_lib30/apb_subsystem30/sv/spi_defines30.svh
+soc_verification_lib30/sv_cb_ex_lib30/uart_ctrl30/sv/uart_ctrl_defines30.svh
+soc_verification_lib30/sv_cb_ex_lib30/apb_subsystem30/sv/apb_subsystem_defines30.svh
+soc_verification_lib30/sv_cb_ex_lib30/interface_uvc_lib30/ahb30/sv/ahb_pkg30.sv
+soc_verification_lib30/sv_cb_ex_lib30/interface_uvc_lib30/apb30/sv/apb_pkg30.sv
+soc_verification_lib30/sv_cb_ex_lib30/interface_uvc_lib30/uart30/sv/uart_pkg30.sv
+soc_verification_lib30/sv_cb_ex_lib30/interface_uvc_lib30/gpio30/sv/gpio_pkg30.sv
+soc_verification_lib30/sv_cb_ex_lib30/interface_uvc_lib30/spi30/sv/spi_pkg30.sv
+soc_verification_lib30/sv_cb_ex_lib30/uart_ctrl30/sv/uart_ctrl_pkg30.sv
+soc_verification_lib30/sv_cb_ex_lib30/apb_subsystem30/sv/apb_subsystem_pkg30.sv
+
+soc_verification_lib30/sv_cb_ex_lib30/apb_subsystem30/tb/sv/apb_subsystem_top30.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC
+

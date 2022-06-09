@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib11/sv_cb_ex_lib11/interface_uvc_lib11/ahb11/sv
++incdir+soc_verification_lib11/sv_cb_ex_lib11/interface_uvc_lib11/apb11/sv
++incdir+soc_verification_lib11/sv_cb_ex_lib11/interface_uvc_lib11/uart11/sv
++incdir+soc_verification_lib11/sv_cb_ex_lib11/interface_uvc_lib11/spi11/sv
++incdir+soc_verification_lib11/sv_cb_ex_lib11/interface_uvc_lib11/gpio11/sv
++incdir+soc_verification_lib11/sv_cb_ex_lib11/uart_ctrl11/sv
++incdir+soc_verification_lib11/sv_cb_ex_lib11/uart_ctrl11/sv/sequence_lib11
++incdir+soc_verification_lib11/sv_cb_ex_lib11/apb_subsystem11/sv
++incdir+soc_verification_lib11/sv_cb_ex_lib11/apb_subsystem11/sv/sequence_lib11
++incdir+soc_verification_lib11/sv_cb_ex_lib11/apb_subsystem11/tb/sv
++incdir+soc_verification_lib11/sv_cb_ex_lib11/apb_subsystem11/tb/tests
++incdir+designs11/socv11/rtl11/rtl_lpw11/smc11/rtl11
+
+designs11/socv11/rtl11/rtl_lpw11/opencores11/uart1655011/rtl11/uart_defines11.v
+designs11/socv11/rtl11/rtl_lpw11/opencores11/spi11/rtl11/spi_defines11.v
+soc_verification_lib11/sv_cb_ex_lib11/apb_subsystem11/sv/gpio_defines11.svh
+soc_verification_lib11/sv_cb_ex_lib11/apb_subsystem11/sv/spi_defines11.svh
+soc_verification_lib11/sv_cb_ex_lib11/uart_ctrl11/sv/uart_ctrl_defines11.svh
+soc_verification_lib11/sv_cb_ex_lib11/apb_subsystem11/sv/apb_subsystem_defines11.svh
+soc_verification_lib11/sv_cb_ex_lib11/interface_uvc_lib11/ahb11/sv/ahb_pkg11.sv
+soc_verification_lib11/sv_cb_ex_lib11/interface_uvc_lib11/apb11/sv/apb_pkg11.sv
+soc_verification_lib11/sv_cb_ex_lib11/interface_uvc_lib11/uart11/sv/uart_pkg11.sv
+soc_verification_lib11/sv_cb_ex_lib11/interface_uvc_lib11/gpio11/sv/gpio_pkg11.sv
+soc_verification_lib11/sv_cb_ex_lib11/interface_uvc_lib11/spi11/sv/spi_pkg11.sv
+soc_verification_lib11/sv_cb_ex_lib11/uart_ctrl11/sv/uart_ctrl_pkg11.sv
+soc_verification_lib11/sv_cb_ex_lib11/apb_subsystem11/sv/apb_subsystem_pkg11.sv
+
+soc_verification_lib11/sv_cb_ex_lib11/apb_subsystem11/tb/sv/apb_subsystem_top11.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

@@ -1,0 +1,35 @@
++dvt_extended_checks+auto
++dvt_enable_full_semantic_checks
++dvt_build_log_to_file+false
++dvt_incremental_compile_timeout+10
+     
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_1/home1/george1.matei1/dvt_predefined_projects_target1/uvm_ref_flow_11.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_2/home2/george2.matei2/dvt_predefined_projects_target2/uvm_ref_flow_12.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_3/home3/george3.matei3/dvt_predefined_projects_target3/uvm_ref_flow_13.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_4/home4/george4.matei4/dvt_predefined_projects_target4/uvm_ref_flow_14.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_5/home5/george5.matei5/dvt_predefined_projects_target5/uvm_ref_flow_15.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_6/home6/george6.matei6/dvt_predefined_projects_target6/uvm_ref_flow_16.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_7/home7/george7.matei7/dvt_predefined_projects_target7/uvm_ref_flow_17.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_8/home8/george8.matei8/dvt_predefined_projects_target8/uvm_ref_flow_18.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_9/home9/george9.matei9/dvt_predefined_projects_target9/uvm_ref_flow_19.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_10/home10/george10.matei10/dvt_predefined_projects_target10/uvm_ref_flow_110.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_11/home11/george11.matei11/dvt_predefined_projects_target11/uvm_ref_flow_111.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_12/home12/george12.matei12/dvt_predefined_projects_target12/uvm_ref_flow_112.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_13/home13/george13.matei13/dvt_predefined_projects_target13/uvm_ref_flow_113.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_14/home14/george14.matei14/dvt_predefined_projects_target14/uvm_ref_flow_114.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_15/home15/george15.matei15/dvt_predefined_projects_target15/uvm_ref_flow_115.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_16/home16/george16.matei16/dvt_predefined_projects_target16/uvm_ref_flow_116.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_17/home17/george17.matei17/dvt_predefined_projects_target17/uvm_ref_flow_117.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_18/home18/george18.matei18/dvt_predefined_projects_target18/uvm_ref_flow_118.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_19/home19/george19.matei19/dvt_predefined_projects_target19/uvm_ref_flow_119.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_20/home20/george20.matei20/dvt_predefined_projects_target20/uvm_ref_flow_120.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_21/home21/george21.matei21/dvt_predefined_projects_target21/uvm_ref_flow_121.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_22/home22/george22.matei22/dvt_predefined_projects_target22/uvm_ref_flow_122.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_23/home23/george23.matei23/dvt_predefined_projects_target23/uvm_ref_flow_123.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_24/home24/george24.matei24/dvt_predefined_projects_target24/uvm_ref_flow_124.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_25/home25/george25.matei25/dvt_predefined_projects_target25/uvm_ref_flow_125.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_26/home26/george26.matei26/dvt_predefined_projects_target26/uvm_ref_flow_126.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_27/home27/george27.matei27/dvt_predefined_projects_target27/uvm_ref_flow_127.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_28/home28/george28.matei28/dvt_predefined_projects_target28/uvm_ref_flow_128.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_29/home29/george29.matei29/dvt_predefined_projects_target29/uvm_ref_flow_129.1 -f .dvt/default.build
++dvt_init+ius.irun +dvt_compilation_root+ref_flow_30/home30/george30.matei30/dvt_predefined_projects_target30/uvm_ref_flow_130.1 -f .dvt/default.build

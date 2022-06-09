@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib18/sv_cb_ex_lib18/interface_uvc_lib18/ahb18/sv
++incdir+soc_verification_lib18/sv_cb_ex_lib18/interface_uvc_lib18/apb18/sv
++incdir+soc_verification_lib18/sv_cb_ex_lib18/interface_uvc_lib18/uart18/sv
++incdir+soc_verification_lib18/sv_cb_ex_lib18/interface_uvc_lib18/spi18/sv
++incdir+soc_verification_lib18/sv_cb_ex_lib18/interface_uvc_lib18/gpio18/sv
++incdir+soc_verification_lib18/sv_cb_ex_lib18/uart_ctrl18/sv
++incdir+soc_verification_lib18/sv_cb_ex_lib18/uart_ctrl18/sv/sequence_lib18
++incdir+soc_verification_lib18/sv_cb_ex_lib18/apb_subsystem18/sv
++incdir+soc_verification_lib18/sv_cb_ex_lib18/apb_subsystem18/sv/sequence_lib18
++incdir+soc_verification_lib18/sv_cb_ex_lib18/apb_subsystem18/tb/sv
++incdir+soc_verification_lib18/sv_cb_ex_lib18/apb_subsystem18/tb/tests
++incdir+designs18/socv18/rtl18/rtl_lpw18/smc18/rtl18
+
+designs18/socv18/rtl18/rtl_lpw18/opencores18/uart1655018/rtl18/uart_defines18.v
+designs18/socv18/rtl18/rtl_lpw18/opencores18/spi18/rtl18/spi_defines18.v
+soc_verification_lib18/sv_cb_ex_lib18/apb_subsystem18/sv/gpio_defines18.svh
+soc_verification_lib18/sv_cb_ex_lib18/apb_subsystem18/sv/spi_defines18.svh
+soc_verification_lib18/sv_cb_ex_lib18/uart_ctrl18/sv/uart_ctrl_defines18.svh
+soc_verification_lib18/sv_cb_ex_lib18/apb_subsystem18/sv/apb_subsystem_defines18.svh
+soc_verification_lib18/sv_cb_ex_lib18/interface_uvc_lib18/ahb18/sv/ahb_pkg18.sv
+soc_verification_lib18/sv_cb_ex_lib18/interface_uvc_lib18/apb18/sv/apb_pkg18.sv
+soc_verification_lib18/sv_cb_ex_lib18/interface_uvc_lib18/uart18/sv/uart_pkg18.sv
+soc_verification_lib18/sv_cb_ex_lib18/interface_uvc_lib18/gpio18/sv/gpio_pkg18.sv
+soc_verification_lib18/sv_cb_ex_lib18/interface_uvc_lib18/spi18/sv/spi_pkg18.sv
+soc_verification_lib18/sv_cb_ex_lib18/uart_ctrl18/sv/uart_ctrl_pkg18.sv
+soc_verification_lib18/sv_cb_ex_lib18/apb_subsystem18/sv/apb_subsystem_pkg18.sv
+
+soc_verification_lib18/sv_cb_ex_lib18/apb_subsystem18/tb/sv/apb_subsystem_top18.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

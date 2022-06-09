@@ -1,0 +1,6 @@
+ttc_counter_lite21.v
+ttc_interface_lite21.v
+ttc_interrupt_lite21.v
+ttc_count_rst_lite21.v
+ttc_timer_counter_lite21.v
+ttc_lite21.v

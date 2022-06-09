@@ -1,0 +1,7 @@
+-incdir ${UVM_REF_HOME}/designs21/socv21/rtl21/rtl_lpw21/alut21/rtl21/
+
+alut_reg_bank21.v
+alut_addr_checker21.v
+alut_mem21.v
+alut_age_checker21.v
+alut21.v

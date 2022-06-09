@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib26/sv_cb_ex_lib26/interface_uvc_lib26/ahb26/sv
++incdir+soc_verification_lib26/sv_cb_ex_lib26/interface_uvc_lib26/apb26/sv
++incdir+soc_verification_lib26/sv_cb_ex_lib26/interface_uvc_lib26/uart26/sv
++incdir+soc_verification_lib26/sv_cb_ex_lib26/interface_uvc_lib26/spi26/sv
++incdir+soc_verification_lib26/sv_cb_ex_lib26/interface_uvc_lib26/gpio26/sv
++incdir+soc_verification_lib26/sv_cb_ex_lib26/uart_ctrl26/sv
++incdir+soc_verification_lib26/sv_cb_ex_lib26/uart_ctrl26/sv/sequence_lib26
++incdir+soc_verification_lib26/sv_cb_ex_lib26/apb_subsystem26/sv
++incdir+soc_verification_lib26/sv_cb_ex_lib26/apb_subsystem26/sv/sequence_lib26
++incdir+soc_verification_lib26/sv_cb_ex_lib26/apb_subsystem26/tb/sv
++incdir+soc_verification_lib26/sv_cb_ex_lib26/apb_subsystem26/tb/tests
++incdir+designs26/socv26/rtl26/rtl_lpw26/smc26/rtl26
+
+designs26/socv26/rtl26/rtl_lpw26/opencores26/uart1655026/rtl26/uart_defines26.v
+designs26/socv26/rtl26/rtl_lpw26/opencores26/spi26/rtl26/spi_defines26.v
+soc_verification_lib26/sv_cb_ex_lib26/apb_subsystem26/sv/gpio_defines26.svh
+soc_verification_lib26/sv_cb_ex_lib26/apb_subsystem26/sv/spi_defines26.svh
+soc_verification_lib26/sv_cb_ex_lib26/uart_ctrl26/sv/uart_ctrl_defines26.svh
+soc_verification_lib26/sv_cb_ex_lib26/apb_subsystem26/sv/apb_subsystem_defines26.svh
+soc_verification_lib26/sv_cb_ex_lib26/interface_uvc_lib26/ahb26/sv/ahb_pkg26.sv
+soc_verification_lib26/sv_cb_ex_lib26/interface_uvc_lib26/apb26/sv/apb_pkg26.sv
+soc_verification_lib26/sv_cb_ex_lib26/interface_uvc_lib26/uart26/sv/uart_pkg26.sv
+soc_verification_lib26/sv_cb_ex_lib26/interface_uvc_lib26/gpio26/sv/gpio_pkg26.sv
+soc_verification_lib26/sv_cb_ex_lib26/interface_uvc_lib26/spi26/sv/spi_pkg26.sv
+soc_verification_lib26/sv_cb_ex_lib26/uart_ctrl26/sv/uart_ctrl_pkg26.sv
+soc_verification_lib26/sv_cb_ex_lib26/apb_subsystem26/sv/apb_subsystem_pkg26.sv
+
+soc_verification_lib26/sv_cb_ex_lib26/apb_subsystem26/tb/sv/apb_subsystem_top26.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

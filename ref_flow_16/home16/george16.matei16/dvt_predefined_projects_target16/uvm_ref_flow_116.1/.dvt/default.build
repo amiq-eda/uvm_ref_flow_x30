@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib16/sv_cb_ex_lib16/interface_uvc_lib16/ahb16/sv
++incdir+soc_verification_lib16/sv_cb_ex_lib16/interface_uvc_lib16/apb16/sv
++incdir+soc_verification_lib16/sv_cb_ex_lib16/interface_uvc_lib16/uart16/sv
++incdir+soc_verification_lib16/sv_cb_ex_lib16/interface_uvc_lib16/spi16/sv
++incdir+soc_verification_lib16/sv_cb_ex_lib16/interface_uvc_lib16/gpio16/sv
++incdir+soc_verification_lib16/sv_cb_ex_lib16/uart_ctrl16/sv
++incdir+soc_verification_lib16/sv_cb_ex_lib16/uart_ctrl16/sv/sequence_lib16
++incdir+soc_verification_lib16/sv_cb_ex_lib16/apb_subsystem16/sv
++incdir+soc_verification_lib16/sv_cb_ex_lib16/apb_subsystem16/sv/sequence_lib16
++incdir+soc_verification_lib16/sv_cb_ex_lib16/apb_subsystem16/tb/sv
++incdir+soc_verification_lib16/sv_cb_ex_lib16/apb_subsystem16/tb/tests
++incdir+designs16/socv16/rtl16/rtl_lpw16/smc16/rtl16
+
+designs16/socv16/rtl16/rtl_lpw16/opencores16/uart1655016/rtl16/uart_defines16.v
+designs16/socv16/rtl16/rtl_lpw16/opencores16/spi16/rtl16/spi_defines16.v
+soc_verification_lib16/sv_cb_ex_lib16/apb_subsystem16/sv/gpio_defines16.svh
+soc_verification_lib16/sv_cb_ex_lib16/apb_subsystem16/sv/spi_defines16.svh
+soc_verification_lib16/sv_cb_ex_lib16/uart_ctrl16/sv/uart_ctrl_defines16.svh
+soc_verification_lib16/sv_cb_ex_lib16/apb_subsystem16/sv/apb_subsystem_defines16.svh
+soc_verification_lib16/sv_cb_ex_lib16/interface_uvc_lib16/ahb16/sv/ahb_pkg16.sv
+soc_verification_lib16/sv_cb_ex_lib16/interface_uvc_lib16/apb16/sv/apb_pkg16.sv
+soc_verification_lib16/sv_cb_ex_lib16/interface_uvc_lib16/uart16/sv/uart_pkg16.sv
+soc_verification_lib16/sv_cb_ex_lib16/interface_uvc_lib16/gpio16/sv/gpio_pkg16.sv
+soc_verification_lib16/sv_cb_ex_lib16/interface_uvc_lib16/spi16/sv/spi_pkg16.sv
+soc_verification_lib16/sv_cb_ex_lib16/uart_ctrl16/sv/uart_ctrl_pkg16.sv
+soc_verification_lib16/sv_cb_ex_lib16/apb_subsystem16/sv/apb_subsystem_pkg16.sv
+
+soc_verification_lib16/sv_cb_ex_lib16/apb_subsystem16/tb/sv/apb_subsystem_top16.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

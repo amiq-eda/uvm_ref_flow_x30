@@ -1,0 +1,48 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib21/sv_cb_ex_lib21/interface_uvc_lib21/ahb21/sv
++incdir+soc_verification_lib21/sv_cb_ex_lib21/interface_uvc_lib21/apb21/sv
++incdir+soc_verification_lib21/sv_cb_ex_lib21/interface_uvc_lib21/uart21/sv
++incdir+soc_verification_lib21/sv_cb_ex_lib21/interface_uvc_lib21/spi21/sv
++incdir+soc_verification_lib21/sv_cb_ex_lib21/interface_uvc_lib21/gpio21/sv
++incdir+soc_verification_lib21/sv_cb_ex_lib21/uart_ctrl21/sv
++incdir+soc_verification_lib21/sv_cb_ex_lib21/uart_ctrl21/sv/sequence_lib21
++incdir+soc_verification_lib21/sv_cb_ex_lib21/apb_subsystem21/sv
++incdir+soc_verification_lib21/sv_cb_ex_lib21/apb_subsystem21/sv/sequence_lib21
++incdir+soc_verification_lib21/sv_cb_ex_lib21/apb_subsystem21/tb/sv
++incdir+soc_verification_lib21/sv_cb_ex_lib21/apb_subsystem21/tb/tests
++incdir+designs21/socv21/rtl21/rtl_lpw21/smc21/rtl21
+
+designs21/socv21/rtl21/rtl_lpw21/opencores21/uart1655021/rtl21/uart_defines21.v
+designs21/socv21/rtl21/rtl_lpw21/opencores21/spi21/rtl21/spi_defines21.v
+soc_verification_lib21/sv_cb_ex_lib21/apb_subsystem21/sv/gpio_defines21.svh
+soc_verification_lib21/sv_cb_ex_lib21/apb_subsystem21/sv/spi_defines21.svh
+soc_verification_lib21/sv_cb_ex_lib21/uart_ctrl21/sv/uart_ctrl_defines21.svh
+soc_verification_lib21/sv_cb_ex_lib21/apb_subsystem21/sv/apb_subsystem_defines21.svh
+soc_verification_lib21/sv_cb_ex_lib21/interface_uvc_lib21/ahb21/sv/ahb_pkg21.sv
+soc_verification_lib21/sv_cb_ex_lib21/interface_uvc_lib21/apb21/sv/apb_pkg21.sv
+soc_verification_lib21/sv_cb_ex_lib21/interface_uvc_lib21/uart21/sv/uart_pkg21.sv
+soc_verification_lib21/sv_cb_ex_lib21/interface_uvc_lib21/gpio21/sv/gpio_pkg21.sv
+soc_verification_lib21/sv_cb_ex_lib21/interface_uvc_lib21/spi21/sv/spi_pkg21.sv
+soc_verification_lib21/sv_cb_ex_lib21/uart_ctrl21/sv/uart_ctrl_pkg21.sv
+soc_verification_lib21/sv_cb_ex_lib21/apb_subsystem21/sv/apb_subsystem_pkg21.sv
+
+soc_verification_lib21/sv_cb_ex_lib21/apb_subsystem21/tb/sv/apb_subsystem_top21.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC
+
+-F designs21/socv21/rtl21/rtl_lpw21/apb_subsystem21/rtl21/apb_subsystem.irunargs

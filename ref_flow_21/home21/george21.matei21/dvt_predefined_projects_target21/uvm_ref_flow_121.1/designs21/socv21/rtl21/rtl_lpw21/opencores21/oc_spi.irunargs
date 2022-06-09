@@ -1,0 +1,5 @@
+-incdir ${UVM_REF_HOME}/designs21/socv21/rtl21/rtl_lpw21/opencores21/spi21/rtl21
+
+spi21/rtl21/spi_clgen21.v
+spi21/rtl21/spi_shift21.v
+spi21/rtl21/spi_top21.v

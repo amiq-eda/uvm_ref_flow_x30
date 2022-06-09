@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib23/sv_cb_ex_lib23/interface_uvc_lib23/ahb23/sv
++incdir+soc_verification_lib23/sv_cb_ex_lib23/interface_uvc_lib23/apb23/sv
++incdir+soc_verification_lib23/sv_cb_ex_lib23/interface_uvc_lib23/uart23/sv
++incdir+soc_verification_lib23/sv_cb_ex_lib23/interface_uvc_lib23/spi23/sv
++incdir+soc_verification_lib23/sv_cb_ex_lib23/interface_uvc_lib23/gpio23/sv
++incdir+soc_verification_lib23/sv_cb_ex_lib23/uart_ctrl23/sv
++incdir+soc_verification_lib23/sv_cb_ex_lib23/uart_ctrl23/sv/sequence_lib23
++incdir+soc_verification_lib23/sv_cb_ex_lib23/apb_subsystem23/sv
++incdir+soc_verification_lib23/sv_cb_ex_lib23/apb_subsystem23/sv/sequence_lib23
++incdir+soc_verification_lib23/sv_cb_ex_lib23/apb_subsystem23/tb/sv
++incdir+soc_verification_lib23/sv_cb_ex_lib23/apb_subsystem23/tb/tests
++incdir+designs23/socv23/rtl23/rtl_lpw23/smc23/rtl23
+
+designs23/socv23/rtl23/rtl_lpw23/opencores23/uart1655023/rtl23/uart_defines23.v
+designs23/socv23/rtl23/rtl_lpw23/opencores23/spi23/rtl23/spi_defines23.v
+soc_verification_lib23/sv_cb_ex_lib23/apb_subsystem23/sv/gpio_defines23.svh
+soc_verification_lib23/sv_cb_ex_lib23/apb_subsystem23/sv/spi_defines23.svh
+soc_verification_lib23/sv_cb_ex_lib23/uart_ctrl23/sv/uart_ctrl_defines23.svh
+soc_verification_lib23/sv_cb_ex_lib23/apb_subsystem23/sv/apb_subsystem_defines23.svh
+soc_verification_lib23/sv_cb_ex_lib23/interface_uvc_lib23/ahb23/sv/ahb_pkg23.sv
+soc_verification_lib23/sv_cb_ex_lib23/interface_uvc_lib23/apb23/sv/apb_pkg23.sv
+soc_verification_lib23/sv_cb_ex_lib23/interface_uvc_lib23/uart23/sv/uart_pkg23.sv
+soc_verification_lib23/sv_cb_ex_lib23/interface_uvc_lib23/gpio23/sv/gpio_pkg23.sv
+soc_verification_lib23/sv_cb_ex_lib23/interface_uvc_lib23/spi23/sv/spi_pkg23.sv
+soc_verification_lib23/sv_cb_ex_lib23/uart_ctrl23/sv/uart_ctrl_pkg23.sv
+soc_verification_lib23/sv_cb_ex_lib23/apb_subsystem23/sv/apb_subsystem_pkg23.sv
+
+soc_verification_lib23/sv_cb_ex_lib23/apb_subsystem23/tb/sv/apb_subsystem_top23.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

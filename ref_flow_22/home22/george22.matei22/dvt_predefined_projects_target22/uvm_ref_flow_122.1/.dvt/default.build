@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib22/sv_cb_ex_lib22/interface_uvc_lib22/ahb22/sv
++incdir+soc_verification_lib22/sv_cb_ex_lib22/interface_uvc_lib22/apb22/sv
++incdir+soc_verification_lib22/sv_cb_ex_lib22/interface_uvc_lib22/uart22/sv
++incdir+soc_verification_lib22/sv_cb_ex_lib22/interface_uvc_lib22/spi22/sv
++incdir+soc_verification_lib22/sv_cb_ex_lib22/interface_uvc_lib22/gpio22/sv
++incdir+soc_verification_lib22/sv_cb_ex_lib22/uart_ctrl22/sv
++incdir+soc_verification_lib22/sv_cb_ex_lib22/uart_ctrl22/sv/sequence_lib22
++incdir+soc_verification_lib22/sv_cb_ex_lib22/apb_subsystem22/sv
++incdir+soc_verification_lib22/sv_cb_ex_lib22/apb_subsystem22/sv/sequence_lib22
++incdir+soc_verification_lib22/sv_cb_ex_lib22/apb_subsystem22/tb/sv
++incdir+soc_verification_lib22/sv_cb_ex_lib22/apb_subsystem22/tb/tests
++incdir+designs22/socv22/rtl22/rtl_lpw22/smc22/rtl22
+
+designs22/socv22/rtl22/rtl_lpw22/opencores22/uart1655022/rtl22/uart_defines22.v
+designs22/socv22/rtl22/rtl_lpw22/opencores22/spi22/rtl22/spi_defines22.v
+soc_verification_lib22/sv_cb_ex_lib22/apb_subsystem22/sv/gpio_defines22.svh
+soc_verification_lib22/sv_cb_ex_lib22/apb_subsystem22/sv/spi_defines22.svh
+soc_verification_lib22/sv_cb_ex_lib22/uart_ctrl22/sv/uart_ctrl_defines22.svh
+soc_verification_lib22/sv_cb_ex_lib22/apb_subsystem22/sv/apb_subsystem_defines22.svh
+soc_verification_lib22/sv_cb_ex_lib22/interface_uvc_lib22/ahb22/sv/ahb_pkg22.sv
+soc_verification_lib22/sv_cb_ex_lib22/interface_uvc_lib22/apb22/sv/apb_pkg22.sv
+soc_verification_lib22/sv_cb_ex_lib22/interface_uvc_lib22/uart22/sv/uart_pkg22.sv
+soc_verification_lib22/sv_cb_ex_lib22/interface_uvc_lib22/gpio22/sv/gpio_pkg22.sv
+soc_verification_lib22/sv_cb_ex_lib22/interface_uvc_lib22/spi22/sv/spi_pkg22.sv
+soc_verification_lib22/sv_cb_ex_lib22/uart_ctrl22/sv/uart_ctrl_pkg22.sv
+soc_verification_lib22/sv_cb_ex_lib22/apb_subsystem22/sv/apb_subsystem_pkg22.sv
+
+soc_verification_lib22/sv_cb_ex_lib22/apb_subsystem22/tb/sv/apb_subsystem_top22.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib14/sv_cb_ex_lib14/interface_uvc_lib14/ahb14/sv
++incdir+soc_verification_lib14/sv_cb_ex_lib14/interface_uvc_lib14/apb14/sv
++incdir+soc_verification_lib14/sv_cb_ex_lib14/interface_uvc_lib14/uart14/sv
++incdir+soc_verification_lib14/sv_cb_ex_lib14/interface_uvc_lib14/spi14/sv
++incdir+soc_verification_lib14/sv_cb_ex_lib14/interface_uvc_lib14/gpio14/sv
++incdir+soc_verification_lib14/sv_cb_ex_lib14/uart_ctrl14/sv
++incdir+soc_verification_lib14/sv_cb_ex_lib14/uart_ctrl14/sv/sequence_lib14
++incdir+soc_verification_lib14/sv_cb_ex_lib14/apb_subsystem14/sv
++incdir+soc_verification_lib14/sv_cb_ex_lib14/apb_subsystem14/sv/sequence_lib14
++incdir+soc_verification_lib14/sv_cb_ex_lib14/apb_subsystem14/tb/sv
++incdir+soc_verification_lib14/sv_cb_ex_lib14/apb_subsystem14/tb/tests
++incdir+designs14/socv14/rtl14/rtl_lpw14/smc14/rtl14
+
+designs14/socv14/rtl14/rtl_lpw14/opencores14/uart1655014/rtl14/uart_defines14.v
+designs14/socv14/rtl14/rtl_lpw14/opencores14/spi14/rtl14/spi_defines14.v
+soc_verification_lib14/sv_cb_ex_lib14/apb_subsystem14/sv/gpio_defines14.svh
+soc_verification_lib14/sv_cb_ex_lib14/apb_subsystem14/sv/spi_defines14.svh
+soc_verification_lib14/sv_cb_ex_lib14/uart_ctrl14/sv/uart_ctrl_defines14.svh
+soc_verification_lib14/sv_cb_ex_lib14/apb_subsystem14/sv/apb_subsystem_defines14.svh
+soc_verification_lib14/sv_cb_ex_lib14/interface_uvc_lib14/ahb14/sv/ahb_pkg14.sv
+soc_verification_lib14/sv_cb_ex_lib14/interface_uvc_lib14/apb14/sv/apb_pkg14.sv
+soc_verification_lib14/sv_cb_ex_lib14/interface_uvc_lib14/uart14/sv/uart_pkg14.sv
+soc_verification_lib14/sv_cb_ex_lib14/interface_uvc_lib14/gpio14/sv/gpio_pkg14.sv
+soc_verification_lib14/sv_cb_ex_lib14/interface_uvc_lib14/spi14/sv/spi_pkg14.sv
+soc_verification_lib14/sv_cb_ex_lib14/uart_ctrl14/sv/uart_ctrl_pkg14.sv
+soc_verification_lib14/sv_cb_ex_lib14/apb_subsystem14/sv/apb_subsystem_pkg14.sv
+
+soc_verification_lib14/sv_cb_ex_lib14/apb_subsystem14/tb/sv/apb_subsystem_top14.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

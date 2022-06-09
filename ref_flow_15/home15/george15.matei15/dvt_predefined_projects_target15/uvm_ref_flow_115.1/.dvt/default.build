@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib15/sv_cb_ex_lib15/interface_uvc_lib15/ahb15/sv
++incdir+soc_verification_lib15/sv_cb_ex_lib15/interface_uvc_lib15/apb15/sv
++incdir+soc_verification_lib15/sv_cb_ex_lib15/interface_uvc_lib15/uart15/sv
++incdir+soc_verification_lib15/sv_cb_ex_lib15/interface_uvc_lib15/spi15/sv
++incdir+soc_verification_lib15/sv_cb_ex_lib15/interface_uvc_lib15/gpio15/sv
++incdir+soc_verification_lib15/sv_cb_ex_lib15/uart_ctrl15/sv
++incdir+soc_verification_lib15/sv_cb_ex_lib15/uart_ctrl15/sv/sequence_lib15
++incdir+soc_verification_lib15/sv_cb_ex_lib15/apb_subsystem15/sv
++incdir+soc_verification_lib15/sv_cb_ex_lib15/apb_subsystem15/sv/sequence_lib15
++incdir+soc_verification_lib15/sv_cb_ex_lib15/apb_subsystem15/tb/sv
++incdir+soc_verification_lib15/sv_cb_ex_lib15/apb_subsystem15/tb/tests
++incdir+designs15/socv15/rtl15/rtl_lpw15/smc15/rtl15
+
+designs15/socv15/rtl15/rtl_lpw15/opencores15/uart1655015/rtl15/uart_defines15.v
+designs15/socv15/rtl15/rtl_lpw15/opencores15/spi15/rtl15/spi_defines15.v
+soc_verification_lib15/sv_cb_ex_lib15/apb_subsystem15/sv/gpio_defines15.svh
+soc_verification_lib15/sv_cb_ex_lib15/apb_subsystem15/sv/spi_defines15.svh
+soc_verification_lib15/sv_cb_ex_lib15/uart_ctrl15/sv/uart_ctrl_defines15.svh
+soc_verification_lib15/sv_cb_ex_lib15/apb_subsystem15/sv/apb_subsystem_defines15.svh
+soc_verification_lib15/sv_cb_ex_lib15/interface_uvc_lib15/ahb15/sv/ahb_pkg15.sv
+soc_verification_lib15/sv_cb_ex_lib15/interface_uvc_lib15/apb15/sv/apb_pkg15.sv
+soc_verification_lib15/sv_cb_ex_lib15/interface_uvc_lib15/uart15/sv/uart_pkg15.sv
+soc_verification_lib15/sv_cb_ex_lib15/interface_uvc_lib15/gpio15/sv/gpio_pkg15.sv
+soc_verification_lib15/sv_cb_ex_lib15/interface_uvc_lib15/spi15/sv/spi_pkg15.sv
+soc_verification_lib15/sv_cb_ex_lib15/uart_ctrl15/sv/uart_ctrl_pkg15.sv
+soc_verification_lib15/sv_cb_ex_lib15/apb_subsystem15/sv/apb_subsystem_pkg15.sv
+
+soc_verification_lib15/sv_cb_ex_lib15/apb_subsystem15/tb/sv/apb_subsystem_top15.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

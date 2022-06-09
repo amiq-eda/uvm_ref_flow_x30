@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib6/sv_cb_ex_lib6/interface_uvc_lib6/ahb6/sv
++incdir+soc_verification_lib6/sv_cb_ex_lib6/interface_uvc_lib6/apb6/sv
++incdir+soc_verification_lib6/sv_cb_ex_lib6/interface_uvc_lib6/uart6/sv
++incdir+soc_verification_lib6/sv_cb_ex_lib6/interface_uvc_lib6/spi6/sv
++incdir+soc_verification_lib6/sv_cb_ex_lib6/interface_uvc_lib6/gpio6/sv
++incdir+soc_verification_lib6/sv_cb_ex_lib6/uart_ctrl6/sv
++incdir+soc_verification_lib6/sv_cb_ex_lib6/uart_ctrl6/sv/sequence_lib6
++incdir+soc_verification_lib6/sv_cb_ex_lib6/apb_subsystem6/sv
++incdir+soc_verification_lib6/sv_cb_ex_lib6/apb_subsystem6/sv/sequence_lib6
++incdir+soc_verification_lib6/sv_cb_ex_lib6/apb_subsystem6/tb/sv
++incdir+soc_verification_lib6/sv_cb_ex_lib6/apb_subsystem6/tb/tests
++incdir+designs6/socv6/rtl6/rtl_lpw6/smc6/rtl6
+
+designs6/socv6/rtl6/rtl_lpw6/opencores6/uart165506/rtl6/uart_defines6.v
+designs6/socv6/rtl6/rtl_lpw6/opencores6/spi6/rtl6/spi_defines6.v
+soc_verification_lib6/sv_cb_ex_lib6/apb_subsystem6/sv/gpio_defines6.svh
+soc_verification_lib6/sv_cb_ex_lib6/apb_subsystem6/sv/spi_defines6.svh
+soc_verification_lib6/sv_cb_ex_lib6/uart_ctrl6/sv/uart_ctrl_defines6.svh
+soc_verification_lib6/sv_cb_ex_lib6/apb_subsystem6/sv/apb_subsystem_defines6.svh
+soc_verification_lib6/sv_cb_ex_lib6/interface_uvc_lib6/ahb6/sv/ahb_pkg6.sv
+soc_verification_lib6/sv_cb_ex_lib6/interface_uvc_lib6/apb6/sv/apb_pkg6.sv
+soc_verification_lib6/sv_cb_ex_lib6/interface_uvc_lib6/uart6/sv/uart_pkg6.sv
+soc_verification_lib6/sv_cb_ex_lib6/interface_uvc_lib6/gpio6/sv/gpio_pkg6.sv
+soc_verification_lib6/sv_cb_ex_lib6/interface_uvc_lib6/spi6/sv/spi_pkg6.sv
+soc_verification_lib6/sv_cb_ex_lib6/uart_ctrl6/sv/uart_ctrl_pkg6.sv
+soc_verification_lib6/sv_cb_ex_lib6/apb_subsystem6/sv/apb_subsystem_pkg6.sv
+
+soc_verification_lib6/sv_cb_ex_lib6/apb_subsystem6/tb/sv/apb_subsystem_top6.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

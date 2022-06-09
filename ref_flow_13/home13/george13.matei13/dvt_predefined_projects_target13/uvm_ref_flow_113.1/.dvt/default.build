@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib13/sv_cb_ex_lib13/interface_uvc_lib13/ahb13/sv
++incdir+soc_verification_lib13/sv_cb_ex_lib13/interface_uvc_lib13/apb13/sv
++incdir+soc_verification_lib13/sv_cb_ex_lib13/interface_uvc_lib13/uart13/sv
++incdir+soc_verification_lib13/sv_cb_ex_lib13/interface_uvc_lib13/spi13/sv
++incdir+soc_verification_lib13/sv_cb_ex_lib13/interface_uvc_lib13/gpio13/sv
++incdir+soc_verification_lib13/sv_cb_ex_lib13/uart_ctrl13/sv
++incdir+soc_verification_lib13/sv_cb_ex_lib13/uart_ctrl13/sv/sequence_lib13
++incdir+soc_verification_lib13/sv_cb_ex_lib13/apb_subsystem13/sv
++incdir+soc_verification_lib13/sv_cb_ex_lib13/apb_subsystem13/sv/sequence_lib13
++incdir+soc_verification_lib13/sv_cb_ex_lib13/apb_subsystem13/tb/sv
++incdir+soc_verification_lib13/sv_cb_ex_lib13/apb_subsystem13/tb/tests
++incdir+designs13/socv13/rtl13/rtl_lpw13/smc13/rtl13
+
+designs13/socv13/rtl13/rtl_lpw13/opencores13/uart1655013/rtl13/uart_defines13.v
+designs13/socv13/rtl13/rtl_lpw13/opencores13/spi13/rtl13/spi_defines13.v
+soc_verification_lib13/sv_cb_ex_lib13/apb_subsystem13/sv/gpio_defines13.svh
+soc_verification_lib13/sv_cb_ex_lib13/apb_subsystem13/sv/spi_defines13.svh
+soc_verification_lib13/sv_cb_ex_lib13/uart_ctrl13/sv/uart_ctrl_defines13.svh
+soc_verification_lib13/sv_cb_ex_lib13/apb_subsystem13/sv/apb_subsystem_defines13.svh
+soc_verification_lib13/sv_cb_ex_lib13/interface_uvc_lib13/ahb13/sv/ahb_pkg13.sv
+soc_verification_lib13/sv_cb_ex_lib13/interface_uvc_lib13/apb13/sv/apb_pkg13.sv
+soc_verification_lib13/sv_cb_ex_lib13/interface_uvc_lib13/uart13/sv/uart_pkg13.sv
+soc_verification_lib13/sv_cb_ex_lib13/interface_uvc_lib13/gpio13/sv/gpio_pkg13.sv
+soc_verification_lib13/sv_cb_ex_lib13/interface_uvc_lib13/spi13/sv/spi_pkg13.sv
+soc_verification_lib13/sv_cb_ex_lib13/uart_ctrl13/sv/uart_ctrl_pkg13.sv
+soc_verification_lib13/sv_cb_ex_lib13/apb_subsystem13/sv/apb_subsystem_pkg13.sv
+
+soc_verification_lib13/sv_cb_ex_lib13/apb_subsystem13/tb/sv/apb_subsystem_top13.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

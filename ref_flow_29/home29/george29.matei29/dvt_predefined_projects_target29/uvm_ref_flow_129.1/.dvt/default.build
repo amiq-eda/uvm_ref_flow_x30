@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib29/sv_cb_ex_lib29/interface_uvc_lib29/ahb29/sv
++incdir+soc_verification_lib29/sv_cb_ex_lib29/interface_uvc_lib29/apb29/sv
++incdir+soc_verification_lib29/sv_cb_ex_lib29/interface_uvc_lib29/uart29/sv
++incdir+soc_verification_lib29/sv_cb_ex_lib29/interface_uvc_lib29/spi29/sv
++incdir+soc_verification_lib29/sv_cb_ex_lib29/interface_uvc_lib29/gpio29/sv
++incdir+soc_verification_lib29/sv_cb_ex_lib29/uart_ctrl29/sv
++incdir+soc_verification_lib29/sv_cb_ex_lib29/uart_ctrl29/sv/sequence_lib29
++incdir+soc_verification_lib29/sv_cb_ex_lib29/apb_subsystem29/sv
++incdir+soc_verification_lib29/sv_cb_ex_lib29/apb_subsystem29/sv/sequence_lib29
++incdir+soc_verification_lib29/sv_cb_ex_lib29/apb_subsystem29/tb/sv
++incdir+soc_verification_lib29/sv_cb_ex_lib29/apb_subsystem29/tb/tests
++incdir+designs29/socv29/rtl29/rtl_lpw29/smc29/rtl29
+
+designs29/socv29/rtl29/rtl_lpw29/opencores29/uart1655029/rtl29/uart_defines29.v
+designs29/socv29/rtl29/rtl_lpw29/opencores29/spi29/rtl29/spi_defines29.v
+soc_verification_lib29/sv_cb_ex_lib29/apb_subsystem29/sv/gpio_defines29.svh
+soc_verification_lib29/sv_cb_ex_lib29/apb_subsystem29/sv/spi_defines29.svh
+soc_verification_lib29/sv_cb_ex_lib29/uart_ctrl29/sv/uart_ctrl_defines29.svh
+soc_verification_lib29/sv_cb_ex_lib29/apb_subsystem29/sv/apb_subsystem_defines29.svh
+soc_verification_lib29/sv_cb_ex_lib29/interface_uvc_lib29/ahb29/sv/ahb_pkg29.sv
+soc_verification_lib29/sv_cb_ex_lib29/interface_uvc_lib29/apb29/sv/apb_pkg29.sv
+soc_verification_lib29/sv_cb_ex_lib29/interface_uvc_lib29/uart29/sv/uart_pkg29.sv
+soc_verification_lib29/sv_cb_ex_lib29/interface_uvc_lib29/gpio29/sv/gpio_pkg29.sv
+soc_verification_lib29/sv_cb_ex_lib29/interface_uvc_lib29/spi29/sv/spi_pkg29.sv
+soc_verification_lib29/sv_cb_ex_lib29/uart_ctrl29/sv/uart_ctrl_pkg29.sv
+soc_verification_lib29/sv_cb_ex_lib29/apb_subsystem29/sv/apb_subsystem_pkg29.sv
+
+soc_verification_lib29/sv_cb_ex_lib29/apb_subsystem29/tb/sv/apb_subsystem_top29.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

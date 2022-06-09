@@ -1,0 +1,48 @@
+# Automatically identify and compile all the source files in the project directory.
+# DO NOT explicitly list files/directories in 'dvt_auto_init' sections. Use 'dvt_init' sections instead.
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib12/sv_cb_ex_lib12/interface_uvc_lib12/ahb12/sv
++incdir+soc_verification_lib12/sv_cb_ex_lib12/interface_uvc_lib12/apb12/sv
++incdir+soc_verification_lib12/sv_cb_ex_lib12/interface_uvc_lib12/uart12/sv
++incdir+soc_verification_lib12/sv_cb_ex_lib12/interface_uvc_lib12/spi12/sv
++incdir+soc_verification_lib12/sv_cb_ex_lib12/interface_uvc_lib12/gpio12/sv
++incdir+soc_verification_lib12/sv_cb_ex_lib12/uart_ctrl12/sv
++incdir+soc_verification_lib12/sv_cb_ex_lib12/uart_ctrl12/sv/sequence_lib12
++incdir+soc_verification_lib12/sv_cb_ex_lib12/apb_subsystem12/sv
++incdir+soc_verification_lib12/sv_cb_ex_lib12/apb_subsystem12/sv/sequence_lib12
++incdir+soc_verification_lib12/sv_cb_ex_lib12/apb_subsystem12/tb/sv
++incdir+soc_verification_lib12/sv_cb_ex_lib12/apb_subsystem12/tb/tests
++incdir+designs12/socv12/rtl12/rtl_lpw12/smc12/rtl12
+
+designs12/socv12/rtl12/rtl_lpw12/opencores12/uart1655012/rtl12/uart_defines12.v
+designs12/socv12/rtl12/rtl_lpw12/opencores12/spi12/rtl12/spi_defines12.v
+soc_verification_lib12/sv_cb_ex_lib12/apb_subsystem12/sv/gpio_defines12.svh
+soc_verification_lib12/sv_cb_ex_lib12/apb_subsystem12/sv/spi_defines12.svh
+soc_verification_lib12/sv_cb_ex_lib12/uart_ctrl12/sv/uart_ctrl_defines12.svh
+soc_verification_lib12/sv_cb_ex_lib12/apb_subsystem12/sv/apb_subsystem_defines12.svh
+soc_verification_lib12/sv_cb_ex_lib12/interface_uvc_lib12/ahb12/sv/ahb_pkg12.sv
+soc_verification_lib12/sv_cb_ex_lib12/interface_uvc_lib12/apb12/sv/apb_pkg12.sv
+soc_verification_lib12/sv_cb_ex_lib12/interface_uvc_lib12/uart12/sv/uart_pkg12.sv
+soc_verification_lib12/sv_cb_ex_lib12/interface_uvc_lib12/gpio12/sv/gpio_pkg12.sv
+soc_verification_lib12/sv_cb_ex_lib12/interface_uvc_lib12/spi12/sv/spi_pkg12.sv
+soc_verification_lib12/sv_cb_ex_lib12/uart_ctrl12/sv/uart_ctrl_pkg12.sv
+soc_verification_lib12/sv_cb_ex_lib12/apb_subsystem12/sv/apb_subsystem_pkg12.sv
+
+soc_verification_lib12/sv_cb_ex_lib12/apb_subsystem12/tb/sv/apb_subsystem_top12.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

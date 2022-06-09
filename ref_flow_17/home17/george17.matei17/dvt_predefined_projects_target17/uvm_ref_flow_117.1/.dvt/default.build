@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib17/sv_cb_ex_lib17/interface_uvc_lib17/ahb17/sv
++incdir+soc_verification_lib17/sv_cb_ex_lib17/interface_uvc_lib17/apb17/sv
++incdir+soc_verification_lib17/sv_cb_ex_lib17/interface_uvc_lib17/uart17/sv
++incdir+soc_verification_lib17/sv_cb_ex_lib17/interface_uvc_lib17/spi17/sv
++incdir+soc_verification_lib17/sv_cb_ex_lib17/interface_uvc_lib17/gpio17/sv
++incdir+soc_verification_lib17/sv_cb_ex_lib17/uart_ctrl17/sv
++incdir+soc_verification_lib17/sv_cb_ex_lib17/uart_ctrl17/sv/sequence_lib17
++incdir+soc_verification_lib17/sv_cb_ex_lib17/apb_subsystem17/sv
++incdir+soc_verification_lib17/sv_cb_ex_lib17/apb_subsystem17/sv/sequence_lib17
++incdir+soc_verification_lib17/sv_cb_ex_lib17/apb_subsystem17/tb/sv
++incdir+soc_verification_lib17/sv_cb_ex_lib17/apb_subsystem17/tb/tests
++incdir+designs17/socv17/rtl17/rtl_lpw17/smc17/rtl17
+
+designs17/socv17/rtl17/rtl_lpw17/opencores17/uart1655017/rtl17/uart_defines17.v
+designs17/socv17/rtl17/rtl_lpw17/opencores17/spi17/rtl17/spi_defines17.v
+soc_verification_lib17/sv_cb_ex_lib17/apb_subsystem17/sv/gpio_defines17.svh
+soc_verification_lib17/sv_cb_ex_lib17/apb_subsystem17/sv/spi_defines17.svh
+soc_verification_lib17/sv_cb_ex_lib17/uart_ctrl17/sv/uart_ctrl_defines17.svh
+soc_verification_lib17/sv_cb_ex_lib17/apb_subsystem17/sv/apb_subsystem_defines17.svh
+soc_verification_lib17/sv_cb_ex_lib17/interface_uvc_lib17/ahb17/sv/ahb_pkg17.sv
+soc_verification_lib17/sv_cb_ex_lib17/interface_uvc_lib17/apb17/sv/apb_pkg17.sv
+soc_verification_lib17/sv_cb_ex_lib17/interface_uvc_lib17/uart17/sv/uart_pkg17.sv
+soc_verification_lib17/sv_cb_ex_lib17/interface_uvc_lib17/gpio17/sv/gpio_pkg17.sv
+soc_verification_lib17/sv_cb_ex_lib17/interface_uvc_lib17/spi17/sv/spi_pkg17.sv
+soc_verification_lib17/sv_cb_ex_lib17/uart_ctrl17/sv/uart_ctrl_pkg17.sv
+soc_verification_lib17/sv_cb_ex_lib17/apb_subsystem17/sv/apb_subsystem_pkg17.sv
+
+soc_verification_lib17/sv_cb_ex_lib17/apb_subsystem17/tb/sv/apb_subsystem_top17.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

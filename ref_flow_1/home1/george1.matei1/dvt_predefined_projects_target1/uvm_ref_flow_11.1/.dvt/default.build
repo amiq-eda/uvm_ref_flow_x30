@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib1/sv_cb_ex_lib1/interface_uvc_lib1/ahb1/sv
++incdir+soc_verification_lib1/sv_cb_ex_lib1/interface_uvc_lib1/apb1/sv
++incdir+soc_verification_lib1/sv_cb_ex_lib1/interface_uvc_lib1/uart1/sv
++incdir+soc_verification_lib1/sv_cb_ex_lib1/interface_uvc_lib1/spi1/sv
++incdir+soc_verification_lib1/sv_cb_ex_lib1/interface_uvc_lib1/gpio1/sv
++incdir+soc_verification_lib1/sv_cb_ex_lib1/uart_ctrl1/sv
++incdir+soc_verification_lib1/sv_cb_ex_lib1/uart_ctrl1/sv/sequence_lib1
++incdir+soc_verification_lib1/sv_cb_ex_lib1/apb_subsystem1/sv
++incdir+soc_verification_lib1/sv_cb_ex_lib1/apb_subsystem1/sv/sequence_lib1
++incdir+soc_verification_lib1/sv_cb_ex_lib1/apb_subsystem1/tb/sv
++incdir+soc_verification_lib1/sv_cb_ex_lib1/apb_subsystem1/tb/tests
++incdir+designs1/socv1/rtl1/rtl_lpw1/smc1/rtl1
+
+designs1/socv1/rtl1/rtl_lpw1/opencores1/uart165501/rtl1/uart_defines1.v
+designs1/socv1/rtl1/rtl_lpw1/opencores1/spi1/rtl1/spi_defines1.v
+soc_verification_lib1/sv_cb_ex_lib1/apb_subsystem1/sv/gpio_defines1.svh
+soc_verification_lib1/sv_cb_ex_lib1/apb_subsystem1/sv/spi_defines1.svh
+soc_verification_lib1/sv_cb_ex_lib1/uart_ctrl1/sv/uart_ctrl_defines1.svh
+soc_verification_lib1/sv_cb_ex_lib1/apb_subsystem1/sv/apb_subsystem_defines1.svh
+soc_verification_lib1/sv_cb_ex_lib1/interface_uvc_lib1/ahb1/sv/ahb_pkg1.sv
+soc_verification_lib1/sv_cb_ex_lib1/interface_uvc_lib1/apb1/sv/apb_pkg1.sv
+soc_verification_lib1/sv_cb_ex_lib1/interface_uvc_lib1/uart1/sv/uart_pkg1.sv
+soc_verification_lib1/sv_cb_ex_lib1/interface_uvc_lib1/gpio1/sv/gpio_pkg1.sv
+soc_verification_lib1/sv_cb_ex_lib1/interface_uvc_lib1/spi1/sv/spi_pkg1.sv
+soc_verification_lib1/sv_cb_ex_lib1/uart_ctrl1/sv/uart_ctrl_pkg1.sv
+soc_verification_lib1/sv_cb_ex_lib1/apb_subsystem1/sv/apb_subsystem_pkg1.sv
+
+soc_verification_lib1/sv_cb_ex_lib1/apb_subsystem1/tb/sv/apb_subsystem_top1.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

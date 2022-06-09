@@ -1,0 +1,33 @@
+/*-------------------------------------------------------------------------
+File3 name   : test_lib3.sv
+Title3       : Library3 of tests
+Project3     :
+Created3     :
+Description3 : Library3 of tests for the APB3-UART3 Environment3
+Notes3       : Includes3 all the test files. Whenever3 a new test case file is 
+            : created the file has to be included3 here3
+----------------------------------------------------------------------*/
+//   Copyright3 1999-2010 Cadence3 Design3 Systems3, Inc3.
+//   All Rights3 Reserved3 Worldwide3
+//
+//   Licensed3 under the Apache3 License3, Version3 2.0 (the
+//   "License3"); you may not use this file except3 in
+//   compliance3 with the License3.  You may obtain3 a copy of
+//   the License3 at
+//
+//       http3://www3.apache3.org3/licenses3/LICENSE3-2.0
+//
+//   Unless3 required3 by applicable3 law3 or agreed3 to in
+//   writing, software3 distributed3 under the License3 is
+//   distributed3 on an "AS3 IS3" BASIS3, WITHOUT3 WARRANTIES3 OR3
+//   CONDITIONS3 OF3 ANY3 KIND3, either3 express3 or implied3.  See
+//   the License3 for the specific3 language3 governing3
+//   permissions3 and limitations3 under the License3.
+//----------------------------------------------------------------------
+
+`include "apb_uart_simple_test3.sv"
+`include "apb_spi_simple_test3.sv"
+`include "apb_gpio_simple_test3.sv"
+`include "apb_subsystem_test3.sv"
+`include "apb_subsystem_lp_test3.sv"
+`include "lp_shutdown_urt13.sv"

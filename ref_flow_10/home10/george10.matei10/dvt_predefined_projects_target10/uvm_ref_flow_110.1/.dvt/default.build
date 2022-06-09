@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib10/sv_cb_ex_lib10/interface_uvc_lib10/ahb10/sv
++incdir+soc_verification_lib10/sv_cb_ex_lib10/interface_uvc_lib10/apb10/sv
++incdir+soc_verification_lib10/sv_cb_ex_lib10/interface_uvc_lib10/uart10/sv
++incdir+soc_verification_lib10/sv_cb_ex_lib10/interface_uvc_lib10/spi10/sv
++incdir+soc_verification_lib10/sv_cb_ex_lib10/interface_uvc_lib10/gpio10/sv
++incdir+soc_verification_lib10/sv_cb_ex_lib10/uart_ctrl10/sv
++incdir+soc_verification_lib10/sv_cb_ex_lib10/uart_ctrl10/sv/sequence_lib10
++incdir+soc_verification_lib10/sv_cb_ex_lib10/apb_subsystem10/sv
++incdir+soc_verification_lib10/sv_cb_ex_lib10/apb_subsystem10/sv/sequence_lib10
++incdir+soc_verification_lib10/sv_cb_ex_lib10/apb_subsystem10/tb/sv
++incdir+soc_verification_lib10/sv_cb_ex_lib10/apb_subsystem10/tb/tests
++incdir+designs10/socv10/rtl10/rtl_lpw10/smc10/rtl10
+
+designs10/socv10/rtl10/rtl_lpw10/opencores10/uart1655010/rtl10/uart_defines10.v
+designs10/socv10/rtl10/rtl_lpw10/opencores10/spi10/rtl10/spi_defines10.v
+soc_verification_lib10/sv_cb_ex_lib10/apb_subsystem10/sv/gpio_defines10.svh
+soc_verification_lib10/sv_cb_ex_lib10/apb_subsystem10/sv/spi_defines10.svh
+soc_verification_lib10/sv_cb_ex_lib10/uart_ctrl10/sv/uart_ctrl_defines10.svh
+soc_verification_lib10/sv_cb_ex_lib10/apb_subsystem10/sv/apb_subsystem_defines10.svh
+soc_verification_lib10/sv_cb_ex_lib10/interface_uvc_lib10/ahb10/sv/ahb_pkg10.sv
+soc_verification_lib10/sv_cb_ex_lib10/interface_uvc_lib10/apb10/sv/apb_pkg10.sv
+soc_verification_lib10/sv_cb_ex_lib10/interface_uvc_lib10/uart10/sv/uart_pkg10.sv
+soc_verification_lib10/sv_cb_ex_lib10/interface_uvc_lib10/gpio10/sv/gpio_pkg10.sv
+soc_verification_lib10/sv_cb_ex_lib10/interface_uvc_lib10/spi10/sv/spi_pkg10.sv
+soc_verification_lib10/sv_cb_ex_lib10/uart_ctrl10/sv/uart_ctrl_pkg10.sv
+soc_verification_lib10/sv_cb_ex_lib10/apb_subsystem10/sv/apb_subsystem_pkg10.sv
+
+soc_verification_lib10/sv_cb_ex_lib10/apb_subsystem10/tb/sv/apb_subsystem_top10.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

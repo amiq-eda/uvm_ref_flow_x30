@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib24/sv_cb_ex_lib24/interface_uvc_lib24/ahb24/sv
++incdir+soc_verification_lib24/sv_cb_ex_lib24/interface_uvc_lib24/apb24/sv
++incdir+soc_verification_lib24/sv_cb_ex_lib24/interface_uvc_lib24/uart24/sv
++incdir+soc_verification_lib24/sv_cb_ex_lib24/interface_uvc_lib24/spi24/sv
++incdir+soc_verification_lib24/sv_cb_ex_lib24/interface_uvc_lib24/gpio24/sv
++incdir+soc_verification_lib24/sv_cb_ex_lib24/uart_ctrl24/sv
++incdir+soc_verification_lib24/sv_cb_ex_lib24/uart_ctrl24/sv/sequence_lib24
++incdir+soc_verification_lib24/sv_cb_ex_lib24/apb_subsystem24/sv
++incdir+soc_verification_lib24/sv_cb_ex_lib24/apb_subsystem24/sv/sequence_lib24
++incdir+soc_verification_lib24/sv_cb_ex_lib24/apb_subsystem24/tb/sv
++incdir+soc_verification_lib24/sv_cb_ex_lib24/apb_subsystem24/tb/tests
++incdir+designs24/socv24/rtl24/rtl_lpw24/smc24/rtl24
+
+designs24/socv24/rtl24/rtl_lpw24/opencores24/uart1655024/rtl24/uart_defines24.v
+designs24/socv24/rtl24/rtl_lpw24/opencores24/spi24/rtl24/spi_defines24.v
+soc_verification_lib24/sv_cb_ex_lib24/apb_subsystem24/sv/gpio_defines24.svh
+soc_verification_lib24/sv_cb_ex_lib24/apb_subsystem24/sv/spi_defines24.svh
+soc_verification_lib24/sv_cb_ex_lib24/uart_ctrl24/sv/uart_ctrl_defines24.svh
+soc_verification_lib24/sv_cb_ex_lib24/apb_subsystem24/sv/apb_subsystem_defines24.svh
+soc_verification_lib24/sv_cb_ex_lib24/interface_uvc_lib24/ahb24/sv/ahb_pkg24.sv
+soc_verification_lib24/sv_cb_ex_lib24/interface_uvc_lib24/apb24/sv/apb_pkg24.sv
+soc_verification_lib24/sv_cb_ex_lib24/interface_uvc_lib24/uart24/sv/uart_pkg24.sv
+soc_verification_lib24/sv_cb_ex_lib24/interface_uvc_lib24/gpio24/sv/gpio_pkg24.sv
+soc_verification_lib24/sv_cb_ex_lib24/interface_uvc_lib24/spi24/sv/spi_pkg24.sv
+soc_verification_lib24/sv_cb_ex_lib24/uart_ctrl24/sv/uart_ctrl_pkg24.sv
+soc_verification_lib24/sv_cb_ex_lib24/apb_subsystem24/sv/apb_subsystem_pkg24.sv
+
+soc_verification_lib24/sv_cb_ex_lib24/apb_subsystem24/tb/sv/apb_subsystem_top24.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

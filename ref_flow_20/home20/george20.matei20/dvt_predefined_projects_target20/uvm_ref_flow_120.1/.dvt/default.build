@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib20/sv_cb_ex_lib20/interface_uvc_lib20/ahb20/sv
++incdir+soc_verification_lib20/sv_cb_ex_lib20/interface_uvc_lib20/apb20/sv
++incdir+soc_verification_lib20/sv_cb_ex_lib20/interface_uvc_lib20/uart20/sv
++incdir+soc_verification_lib20/sv_cb_ex_lib20/interface_uvc_lib20/spi20/sv
++incdir+soc_verification_lib20/sv_cb_ex_lib20/interface_uvc_lib20/gpio20/sv
++incdir+soc_verification_lib20/sv_cb_ex_lib20/uart_ctrl20/sv
++incdir+soc_verification_lib20/sv_cb_ex_lib20/uart_ctrl20/sv/sequence_lib20
++incdir+soc_verification_lib20/sv_cb_ex_lib20/apb_subsystem20/sv
++incdir+soc_verification_lib20/sv_cb_ex_lib20/apb_subsystem20/sv/sequence_lib20
++incdir+soc_verification_lib20/sv_cb_ex_lib20/apb_subsystem20/tb/sv
++incdir+soc_verification_lib20/sv_cb_ex_lib20/apb_subsystem20/tb/tests
++incdir+designs20/socv20/rtl20/rtl_lpw20/smc20/rtl20
+
+designs20/socv20/rtl20/rtl_lpw20/opencores20/uart1655020/rtl20/uart_defines20.v
+designs20/socv20/rtl20/rtl_lpw20/opencores20/spi20/rtl20/spi_defines20.v
+soc_verification_lib20/sv_cb_ex_lib20/apb_subsystem20/sv/gpio_defines20.svh
+soc_verification_lib20/sv_cb_ex_lib20/apb_subsystem20/sv/spi_defines20.svh
+soc_verification_lib20/sv_cb_ex_lib20/uart_ctrl20/sv/uart_ctrl_defines20.svh
+soc_verification_lib20/sv_cb_ex_lib20/apb_subsystem20/sv/apb_subsystem_defines20.svh
+soc_verification_lib20/sv_cb_ex_lib20/interface_uvc_lib20/ahb20/sv/ahb_pkg20.sv
+soc_verification_lib20/sv_cb_ex_lib20/interface_uvc_lib20/apb20/sv/apb_pkg20.sv
+soc_verification_lib20/sv_cb_ex_lib20/interface_uvc_lib20/uart20/sv/uart_pkg20.sv
+soc_verification_lib20/sv_cb_ex_lib20/interface_uvc_lib20/gpio20/sv/gpio_pkg20.sv
+soc_verification_lib20/sv_cb_ex_lib20/interface_uvc_lib20/spi20/sv/spi_pkg20.sv
+soc_verification_lib20/sv_cb_ex_lib20/uart_ctrl20/sv/uart_ctrl_pkg20.sv
+soc_verification_lib20/sv_cb_ex_lib20/apb_subsystem20/sv/apb_subsystem_pkg20.sv
+
+soc_verification_lib20/sv_cb_ex_lib20/apb_subsystem20/tb/sv/apb_subsystem_top20.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib7/sv_cb_ex_lib7/interface_uvc_lib7/ahb7/sv
++incdir+soc_verification_lib7/sv_cb_ex_lib7/interface_uvc_lib7/apb7/sv
++incdir+soc_verification_lib7/sv_cb_ex_lib7/interface_uvc_lib7/uart7/sv
++incdir+soc_verification_lib7/sv_cb_ex_lib7/interface_uvc_lib7/spi7/sv
++incdir+soc_verification_lib7/sv_cb_ex_lib7/interface_uvc_lib7/gpio7/sv
++incdir+soc_verification_lib7/sv_cb_ex_lib7/uart_ctrl7/sv
++incdir+soc_verification_lib7/sv_cb_ex_lib7/uart_ctrl7/sv/sequence_lib7
++incdir+soc_verification_lib7/sv_cb_ex_lib7/apb_subsystem7/sv
++incdir+soc_verification_lib7/sv_cb_ex_lib7/apb_subsystem7/sv/sequence_lib7
++incdir+soc_verification_lib7/sv_cb_ex_lib7/apb_subsystem7/tb/sv
++incdir+soc_verification_lib7/sv_cb_ex_lib7/apb_subsystem7/tb/tests
++incdir+designs7/socv7/rtl7/rtl_lpw7/smc7/rtl7
+
+designs7/socv7/rtl7/rtl_lpw7/opencores7/uart165507/rtl7/uart_defines7.v
+designs7/socv7/rtl7/rtl_lpw7/opencores7/spi7/rtl7/spi_defines7.v
+soc_verification_lib7/sv_cb_ex_lib7/apb_subsystem7/sv/gpio_defines7.svh
+soc_verification_lib7/sv_cb_ex_lib7/apb_subsystem7/sv/spi_defines7.svh
+soc_verification_lib7/sv_cb_ex_lib7/uart_ctrl7/sv/uart_ctrl_defines7.svh
+soc_verification_lib7/sv_cb_ex_lib7/apb_subsystem7/sv/apb_subsystem_defines7.svh
+soc_verification_lib7/sv_cb_ex_lib7/interface_uvc_lib7/ahb7/sv/ahb_pkg7.sv
+soc_verification_lib7/sv_cb_ex_lib7/interface_uvc_lib7/apb7/sv/apb_pkg7.sv
+soc_verification_lib7/sv_cb_ex_lib7/interface_uvc_lib7/uart7/sv/uart_pkg7.sv
+soc_verification_lib7/sv_cb_ex_lib7/interface_uvc_lib7/gpio7/sv/gpio_pkg7.sv
+soc_verification_lib7/sv_cb_ex_lib7/interface_uvc_lib7/spi7/sv/spi_pkg7.sv
+soc_verification_lib7/sv_cb_ex_lib7/uart_ctrl7/sv/uart_ctrl_pkg7.sv
+soc_verification_lib7/sv_cb_ex_lib7/apb_subsystem7/sv/apb_subsystem_pkg7.sv
+
+soc_verification_lib7/sv_cb_ex_lib7/apb_subsystem7/tb/sv/apb_subsystem_top7.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC

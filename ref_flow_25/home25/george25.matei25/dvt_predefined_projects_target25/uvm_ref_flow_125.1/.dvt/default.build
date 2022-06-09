@@ -1,0 +1,46 @@
+//For more details about this directive please visit: https://www.dvteclipse.com/documentation/sv/Including_Other_Argument_Files.html
++define+INCA
+
+//
+// UVM Library
+//
++incdir+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src
+$DVT_PREDEFINED_PROJECTS/libs/uvm-1.1b/src/uvm_pkg.sv
+
+//
+// Project Compilation
+//
+
++define+LITLE_ENDIAN
++define+UART_ABV_ON
+
++incdir+soc_verification_lib25/sv_cb_ex_lib25/interface_uvc_lib25/ahb25/sv
++incdir+soc_verification_lib25/sv_cb_ex_lib25/interface_uvc_lib25/apb25/sv
++incdir+soc_verification_lib25/sv_cb_ex_lib25/interface_uvc_lib25/uart25/sv
++incdir+soc_verification_lib25/sv_cb_ex_lib25/interface_uvc_lib25/spi25/sv
++incdir+soc_verification_lib25/sv_cb_ex_lib25/interface_uvc_lib25/gpio25/sv
++incdir+soc_verification_lib25/sv_cb_ex_lib25/uart_ctrl25/sv
++incdir+soc_verification_lib25/sv_cb_ex_lib25/uart_ctrl25/sv/sequence_lib25
++incdir+soc_verification_lib25/sv_cb_ex_lib25/apb_subsystem25/sv
++incdir+soc_verification_lib25/sv_cb_ex_lib25/apb_subsystem25/sv/sequence_lib25
++incdir+soc_verification_lib25/sv_cb_ex_lib25/apb_subsystem25/tb/sv
++incdir+soc_verification_lib25/sv_cb_ex_lib25/apb_subsystem25/tb/tests
++incdir+designs25/socv25/rtl25/rtl_lpw25/smc25/rtl25
+
+designs25/socv25/rtl25/rtl_lpw25/opencores25/uart1655025/rtl25/uart_defines25.v
+designs25/socv25/rtl25/rtl_lpw25/opencores25/spi25/rtl25/spi_defines25.v
+soc_verification_lib25/sv_cb_ex_lib25/apb_subsystem25/sv/gpio_defines25.svh
+soc_verification_lib25/sv_cb_ex_lib25/apb_subsystem25/sv/spi_defines25.svh
+soc_verification_lib25/sv_cb_ex_lib25/uart_ctrl25/sv/uart_ctrl_defines25.svh
+soc_verification_lib25/sv_cb_ex_lib25/apb_subsystem25/sv/apb_subsystem_defines25.svh
+soc_verification_lib25/sv_cb_ex_lib25/interface_uvc_lib25/ahb25/sv/ahb_pkg25.sv
+soc_verification_lib25/sv_cb_ex_lib25/interface_uvc_lib25/apb25/sv/apb_pkg25.sv
+soc_verification_lib25/sv_cb_ex_lib25/interface_uvc_lib25/uart25/sv/uart_pkg25.sv
+soc_verification_lib25/sv_cb_ex_lib25/interface_uvc_lib25/gpio25/sv/gpio_pkg25.sv
+soc_verification_lib25/sv_cb_ex_lib25/interface_uvc_lib25/spi25/sv/spi_pkg25.sv
+soc_verification_lib25/sv_cb_ex_lib25/uart_ctrl25/sv/uart_ctrl_pkg25.sv
+soc_verification_lib25/sv_cb_ex_lib25/apb_subsystem25/sv/apb_subsystem_pkg25.sv
+
+soc_verification_lib25/sv_cb_ex_lib25/apb_subsystem25/tb/sv/apb_subsystem_top25.sv
+
++dvt_env+UVM_REF_HOME=$DVT_PROJECT_LOC
